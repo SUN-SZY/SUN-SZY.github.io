@@ -186,6 +186,16 @@
 
                     <link rel="stylesheet" href="../_assets/main.css" />
 
+<script type="text/javascript">
+    window.onload = windowHeight; //页面载入完毕执行函数
+    function windowHeight() {
+        var h = document.documentElement.clientHeight; //获取当前窗口可视操作区域高度
+        var bodyHeight = document.getElementById("divContent"); //寻找ID为content的对象
+        bodyHeight.style.height = (h - 25) + "px"; //你想要自适应高度的对象
+    }
+    setInterval(windowHeight, 500) //每半秒执行一次windowHeight函数
+</script>
+
 <div class="main">
     <article>
         <header>
@@ -207,8 +217,10 @@
         
             </div>
         </header>
-        <div class="article-content markdown-body">
-            <p>#乔普林插件存储库</p>
+        <form id="form1" runat="server">
+            <div id="divContent" style="background-color: rgb(255, 255, 255);border:1px solid rgb(254, 254, 255);">
+                <div class="article-content markdown-body">
+                    <p>#乔普林插件存储库</p>
 <p>这是官方的Joplin插件存储库。它在每小时半小时每30分钟更新一次。</p>
 <p>##安装</p>
 <p>若要安装这些插件中的任何一个，请打开桌面应用程序，然后转到"配置"屏幕中的"插件"部分。然后，您可以搜索任何插件并从那里安装它。</p>
@@ -963,7 +975,9 @@
 </tbody>
 </table>
 
-        </div>
+                </div>
+            </div>
+        </form>
     </article>
 </div>
 
@@ -1129,6 +1143,22 @@
                               </time>
                                             <a class="annual-block-title" href="article/untitled-6">
                                                 微信公众号-推文指南
+                                            </a>
+                                        </li>
+                                        
+                                </ol>
+                            </div>
+                            
+                            <div class="annual-block">
+                                <time class="annual-block-headline">2021</time>
+                                <ol>
+                                    
+                                        <li>
+                                            <time datetime="1637328106000" class="annual-block-date">
+                                2021-11-19 21:21
+                              </time>
+                                            <a class="annual-block-title" href="article/joplin-+-zotero">
+                                                Joplin + zotero 从陌生到熟悉的笔记、文献管理应用
                                             </a>
                                         </li>
                                         

@@ -186,6 +186,16 @@
 
                     <link rel="stylesheet" href="../_assets/main.css" />
 
+<script type="text/javascript">
+    window.onload = windowHeight; //页面载入完毕执行函数
+    function windowHeight() {
+        var h = document.documentElement.clientHeight; //获取当前窗口可视操作区域高度
+        var bodyHeight = document.getElementById("divContent"); //寻找ID为content的对象
+        bodyHeight.style.height = (h - 25) + "px"; //你想要自适应高度的对象
+    }
+    setInterval(windowHeight, 500) //每半秒执行一次windowHeight函数
+</script>
+
 <div class="main">
     <article>
         <header>
@@ -207,8 +217,10 @@
         
             </div>
         </header>
-        <div class="article-content markdown-body">
-            <nav class="table-of-contents"><ul><li><a href="#文章选材">文章选材</a><ul><li><a href="#公众号理念">公众号理念</a></li><li><a href="#公众号定位">公众号定位</a></li><li><a href="#公众号选题方向">公众号选题方向</a></li><li><a href="#公众号文章推荐来源">公众号文章推荐来源</a><ul><li><a href="#新闻热点类">新闻热点类</a></li><li><a href="#大学事务类">大学事务类</a></li><li><a href="#校园生活类">校园生活类</a></li></ul></li><li><a href="#公众号原创栏目">公众号原创栏目</a><ul><li><a href="#河工新青年">河工新青年</a></li><li><a href="#校园手册">校园手册</a></li></ul></li></ul></li><li><a href="#写作规范">写作规范</a><ul><li><a href="#字体规范">字体规范</a><ul><li><a href="#字规范">字规范</a></li><li><a href="#格式规范">格式规范</a><ul><li><a href="#间距">间距</a></li><li><a href="#段落">段落</a></li></ul></li></ul></li><li><a href="#图文规范">图文规范</a><ul><li><a href="#正文配图">正文配图</a></li></ul></li></ul></li><li><a href="#发布流程">发布流程</a><ul><li><a href="#平台登陆">平台登陆</a></li><li><a href="#推文发布">推文发布</a><ul><li><a href="#后台界面介绍">后台界面介绍</a></li><li><a href="#文章转发">文章转发</a></li><li><a href="#原创制作">原创制作</a><ul><li><a href="#原创取材">原创取材</a></li><li><a href="#原创要求">原创要求</a><ul><li><a href="#文章">文章</a></li><li><a href="#图片">图片</a></li><li><a href="#视频">视频</a></li><li><a href="#其他要求">其他要求</a></li><li><a href="#原创激励">原创激励</a></li></ul></li></ul></li></ul></li></ul></li></ul></nav><h1 id="文章选材">文章选材</h1>
+        <form id="form1" runat="server">
+            <div id="divContent" style="background-color: rgb(255, 255, 255);border:1px solid rgb(254, 254, 255);">
+                <div class="article-content markdown-body">
+                    <nav class="table-of-contents"><ul><li><a href="#文章选材">文章选材</a><ul><li><a href="#公众号理念">公众号理念</a></li><li><a href="#公众号定位">公众号定位</a></li><li><a href="#公众号选题方向">公众号选题方向</a></li><li><a href="#公众号文章推荐来源">公众号文章推荐来源</a><ul><li><a href="#新闻热点类">新闻热点类</a></li><li><a href="#大学事务类">大学事务类</a></li><li><a href="#校园生活类">校园生活类</a></li></ul></li><li><a href="#公众号原创栏目">公众号原创栏目</a><ul><li><a href="#河工新青年">河工新青年</a></li><li><a href="#校园手册">校园手册</a></li></ul></li></ul></li><li><a href="#写作规范">写作规范</a><ul><li><a href="#字体规范">字体规范</a><ul><li><a href="#字规范">字规范</a></li><li><a href="#格式规范">格式规范</a><ul><li><a href="#间距">间距</a></li><li><a href="#段落">段落</a></li></ul></li></ul></li><li><a href="#图文规范">图文规范</a><ul><li><a href="#正文配图">正文配图</a></li></ul></li></ul></li><li><a href="#发布流程">发布流程</a><ul><li><a href="#平台登陆">平台登陆</a></li><li><a href="#推文发布">推文发布</a><ul><li><a href="#后台界面介绍">后台界面介绍</a></li><li><a href="#文章转发">文章转发</a></li><li><a href="#原创制作">原创制作</a><ul><li><a href="#原创取材">原创取材</a></li><li><a href="#原创要求">原创要求</a><ul><li><a href="#文章">文章</a></li><li><a href="#图片">图片</a></li><li><a href="#视频">视频</a></li><li><a href="#其他要求">其他要求</a></li><li><a href="#原创激励">原创激励</a></li></ul></li></ul></li></ul></li></ul></li></ul></nav><h1 id="文章选材">文章选材</h1>
 <h2 id="公众号理念">公众号理念</h2>
 <ul>
 <li>/    /学院学生事务与服务中心以“以生为本、服务周到、科学管理、高效便捷”为服务宗旨，以“便捷、高效、耐心、周到”为服务理念，以“最多跑一趟”为服务目标，提供人性化、专业化、贴心化的“一站式”服务，服务学生成长成才，使中心成为学生成长的阵地，教育的窗口和服务的平台。</li>
@@ -593,7 +605,9 @@
 </li>
 </ul>
 
-        </div>
+                </div>
+            </div>
+        </form>
     </article>
 </div>
 
@@ -759,6 +773,22 @@
                               </time>
                                             <a class="annual-block-title" href="article/untitled-6">
                                                 微信公众号-推文指南
+                                            </a>
+                                        </li>
+                                        
+                                </ol>
+                            </div>
+                            
+                            <div class="annual-block">
+                                <time class="annual-block-headline">2021</time>
+                                <ol>
+                                    
+                                        <li>
+                                            <time datetime="1637328106000" class="annual-block-date">
+                                2021-11-19 21:21
+                              </time>
+                                            <a class="annual-block-title" href="article/joplin-+-zotero">
+                                                Joplin + zotero 从陌生到熟悉的笔记、文献管理应用
                                             </a>
                                         </li>
                                         

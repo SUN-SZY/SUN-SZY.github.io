@@ -186,6 +186,16 @@
 
                     <link rel="stylesheet" href="../_assets/main.css" />
 
+<script type="text/javascript">
+    window.onload = windowHeight; //页面载入完毕执行函数
+    function windowHeight() {
+        var h = document.documentElement.clientHeight; //获取当前窗口可视操作区域高度
+        var bodyHeight = document.getElementById("divContent"); //寻找ID为content的对象
+        bodyHeight.style.height = (h - 25) + "px"; //你想要自适应高度的对象
+    }
+    setInterval(windowHeight, 500) //每半秒执行一次windowHeight函数
+</script>
+
 <div class="main">
     <article>
         <header>
@@ -207,8 +217,10 @@
         
             </div>
         </header>
-        <div class="article-content markdown-body">
-            <h1 id="joplin-plugin-repository">Joplin Plugin Repository</h1>
+        <form id="form1" runat="server">
+            <div id="divContent" style="background-color: rgb(255, 255, 255);border:1px solid rgb(254, 254, 255);">
+                <div class="article-content markdown-body">
+                    <h1 id="joplin-plugin-repository">Joplin Plugin Repository</h1>
 <p>This is the official Joplin Plugin Repository. It is updated every 30 minutes on the hour and half-hour.</p>
 <h2 id="installation">Installation</h2>
 <p>To install any of these plugins, open the desktop application, then go to the “Plugins” section in the Configuration screen. You can then search for any plugin and install it from there.</p>
@@ -966,7 +978,9 @@
 </tbody>
 </table>
 
-        </div>
+                </div>
+            </div>
+        </form>
     </article>
 </div>
 
@@ -1132,6 +1146,22 @@
                               </time>
                                             <a class="annual-block-title" href="article/untitled-6">
                                                 微信公众号-推文指南
+                                            </a>
+                                        </li>
+                                        
+                                </ol>
+                            </div>
+                            
+                            <div class="annual-block">
+                                <time class="annual-block-headline">2021</time>
+                                <ol>
+                                    
+                                        <li>
+                                            <time datetime="1637328106000" class="annual-block-date">
+                                2021-11-19 21:21
+                              </time>
+                                            <a class="annual-block-title" href="article/joplin-+-zotero">
+                                                Joplin + zotero 从陌生到熟悉的笔记、文献管理应用
                                             </a>
                                         </li>
                                         
