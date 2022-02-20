@@ -196,15 +196,45 @@
     setInterval(windowHeight, 500) //每半秒执行一次windowHeight函数
 </script>
 
-<div class="main">
-    <article>
-        <header>
-            <h1 class="article-title">
-                乔普林插件存储库
-            </h1>
-            <div class="article-info">
-                <div>
-                    <span>Created At：<time datetime="1642579371000"
+<style>
+    .father {
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
+        /* background-color: #222; */
+    }
+    
+    .element {
+        width: 100%;
+        margin: 0 auto;
+        /* background-color: #eee; */
+        height: auto;
+        padding-bottom: 100%;
+        padding-top: 200px;
+    }
+    
+    .mou {
+        width: 100%;
+        margin: 0 auto;
+        /* background-color: #eee; */
+        height: auto;
+        padding-bottom: inherit;
+        padding-top: 0;
+        margin-bottom: inherit;
+    }
+</style>
+
+<div class="father">
+
+    <div class="main mou">
+        <article class="element">
+            <header>
+                <h1 class="article-title">
+                    乔普林插件存储库
+                </h1>
+                <div class="article-info">
+                    <div>
+                        <span>Created At：<time datetime="1642579371000"
               >2022-01-19 16:02</time
             ></span
           >
@@ -215,11 +245,11 @@
           >
         </div>
         
-            </div>
-        </header>
+                </div>
+            </header>
 
-        <div class="article-content markdown-body">
-            <p>#乔普林插件存储库</p>
+            <div class="article-content markdown-body main-wrap">
+                <p>#乔普林插件存储库</p>
 <p>这是官方的Joplin插件存储库。它在每小时半小时每30分钟更新一次。</p>
 <p>##安装</p>
 <p>若要安装这些插件中的任何一个，请打开桌面应用程序，然后转到"配置"屏幕中的"插件"部分。然后，您可以搜索任何插件并从那里安装它。</p>
@@ -974,9 +1004,11 @@
 </tbody>
 </table>
 
-        </div>
+            </div>
 
-    </article>
+
+        </article>
+    </div>
 </div>
 
 

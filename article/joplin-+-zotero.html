@@ -196,15 +196,45 @@
     setInterval(windowHeight, 500) //每半秒执行一次windowHeight函数
 </script>
 
-<div class="main">
-    <article>
-        <header>
-            <h1 class="article-title">
-                Joplin + zotero 从陌生到熟悉的笔记、文献管理应用
-            </h1>
-            <div class="article-info">
-                <div>
-                    <span>Created At：<time datetime="1637328106000"
+<style>
+    .father {
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
+        /* background-color: #222; */
+    }
+    
+    .element {
+        width: 100%;
+        margin: 0 auto;
+        /* background-color: #eee; */
+        height: auto;
+        padding-bottom: 100%;
+        padding-top: 200px;
+    }
+    
+    .mou {
+        width: 100%;
+        margin: 0 auto;
+        /* background-color: #eee; */
+        height: auto;
+        padding-bottom: inherit;
+        padding-top: 0;
+        margin-bottom: inherit;
+    }
+</style>
+
+<div class="father">
+
+    <div class="main mou">
+        <article class="element">
+            <header>
+                <h1 class="article-title">
+                    Joplin + zotero 从陌生到熟悉的笔记、文献管理应用
+                </h1>
+                <div class="article-info">
+                    <div>
+                        <span>Created At：<time datetime="1637328106000"
               >2021-11-19 21:21</time
             ></span
           >
@@ -215,11 +245,11 @@
           >
         </div>
         
-            </div>
-        </header>
+                </div>
+            </header>
 
-        <div class="article-content markdown-body">
-            <p>Joplin + zotero 从陌生到熟悉的笔记、文献管理应用</p>
+            <div class="article-content markdown-body main-wrap">
+                <p>Joplin + zotero 从陌生到熟悉的笔记、文献管理应用</p>
 <h2 id="一-笔记软件要求前置条件">一、笔记软件要求前置条件</h2>
 <ul>
 <li>
@@ -621,9 +651,11 @@ Zotero主要是为了实现手机端查看操作（过渡使用，一开始我�
 </li>
 </ul>
 
-        </div>
+            </div>
 
-    </article>
+
+        </article>
+    </div>
 </div>
 
 

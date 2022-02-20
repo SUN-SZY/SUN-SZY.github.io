@@ -196,15 +196,45 @@
     setInterval(windowHeight, 500) //每半秒执行一次windowHeight函数
 </script>
 
-<div class="main">
-    <article>
-        <header>
-            <h1 class="article-title">
-                Joplin 插件
-            </h1>
-            <div class="article-info">
-                <div>
-                    <span>Created At：<time datetime="1642579283000"
+<style>
+    .father {
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
+        /* background-color: #222; */
+    }
+    
+    .element {
+        width: 100%;
+        margin: 0 auto;
+        /* background-color: #eee; */
+        height: auto;
+        padding-bottom: 100%;
+        padding-top: 200px;
+    }
+    
+    .mou {
+        width: 100%;
+        margin: 0 auto;
+        /* background-color: #eee; */
+        height: auto;
+        padding-bottom: inherit;
+        padding-top: 0;
+        margin-bottom: inherit;
+    }
+</style>
+
+<div class="father">
+
+    <div class="main mou">
+        <article class="element">
+            <header>
+                <h1 class="article-title">
+                    Joplin 插件
+                </h1>
+                <div class="article-info">
+                    <div>
+                        <span>Created At：<time datetime="1642579283000"
               >2022-01-19 16:01</time
             ></span
           >
@@ -215,11 +245,11 @@
           >
         </div>
         
-            </div>
-        </header>
+                </div>
+            </header>
 
-        <div class="article-content markdown-body">
-            <h1 id="joplin-plugin-repository">Joplin Plugin Repository</h1>
+            <div class="article-content markdown-body main-wrap">
+                <h1 id="joplin-plugin-repository">Joplin Plugin Repository</h1>
 <p>This is the official Joplin Plugin Repository. It is updated every 30 minutes on the hour and half-hour.</p>
 <h2 id="installation">Installation</h2>
 <p>To install any of these plugins, open the desktop application, then go to the “Plugins” section in the Configuration screen. You can then search for any plugin and install it from there.</p>
@@ -977,9 +1007,11 @@
 </tbody>
 </table>
 
-        </div>
+            </div>
 
-    </article>
+
+        </article>
+    </div>
 </div>
 
 
